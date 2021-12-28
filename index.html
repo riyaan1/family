@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Family Book</title>
+</head>
+<body style="background-image: url(https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/10/particles-web-2.gif?resize=600%2C365&quality=80&strip=all&ssl=1);">
+    
+<center>
+    
+    
+<img id="family_img" style= "height:450px ; width: 360px; ;" src="https://i.postimg.cc/MGn9GJXw/family.jpg,https://i.postimg.cc/qqyYvVbq/grandpa.jpg,https://i.postimg.cc/wjMnFtMX/father.jpg,https://i.postimg.cc/5ymDKL83/bro.jpg,https://i.postimg.cc/JnL6wtrd/sister.jpg,https://i.postimg.cc/bw5W5zSK/mother.jpg">
+<br>
+<br> 
+<h1 id="family_text" style="font-size: 50px; color: white;"> Family Book</h1>
+<button style="border-radius: 15px; background-color: mediumblue; height: 30px; width: 90px; font-size: 20px; color: white; z-index: 30;" 
+id="button1" onclick="next()"> Next</button>
+
+</center>
+
+
+<script>
+var img_array=[
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNHwx7zXi9tNxucBA55B3qE1xPUfyBgN7UFhso_UA4DeIp9YQGWixKRsDTKeNAGWIYeE&usqp=CAU",
+"https://www.kindpng.com/picc/m/120-1203344_cartoon-mother-clipart-hd-png-download.png",
+"https://thumbs.dreamstime.com/b/grandmother-waving-hand-cute-cartoon-character-happy-grandparent-s-day-grandmother-waving-hand-cute-cartoon-character-happy-151479821.jpg",
+"https://www.kindpng.com/picc/m/73-738108_fathers-day-clipart-solo-parent-grandfather-clipart-hd.png",
+"https://clipart.world/wp-content/uploads/2021/04/Little-Boy-clipart-1.png",
+];
+
+var text_array=[
+
+"Vishal Amin",
+"Payal Amin",
+"Jyoti Amin",
+"Nimish Amin",
+"Riyaan Amin",
+];
+var o = 0;
+var y = 0;
+
+function next() { 
+
+if(o == 4) {
+o=0;
+};
+
+document.getElementById("family_img").src = img_array[o];
+o++;
+
+if(y == 4){
+y=0; 
+}; 
+
+document.getElementById("family_text").innerHTML=text_array[y]; 
+y++;
+
+};
+</script>
+
+
+</body>
+</html>
